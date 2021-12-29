@@ -1,11 +1,14 @@
 {
   "name": "vue2-router-history",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "vue@2下的路由跳转历史记录及自定义回退层级",
   "keywords":["vue2.x","vue-router3.x","push跳转历史记录处理","自定义回退层级"],
   "main": "index.js",
   "types":"index.d.ts",
   "repository":"https://github.com/mengerwei521/vue2-router-history",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
