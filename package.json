@@ -5,6 +5,7 @@
   "keywords":["vue2.x","vue-router3.x","push跳转历史记录处理","自定义回退层级"],
   "main": "index.js",
   "types":"index.d.ts",
+  "repository":"https://github.com/mengerwei521/vue2-router-history",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
