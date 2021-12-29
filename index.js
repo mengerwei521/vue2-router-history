@@ -1,4 +1,4 @@
-import Loading from './loading'
+import Loading from './lib/loading'
 //要求1 路由列表的命名必须有name
 class routerHistory {
   constructor(options) {
