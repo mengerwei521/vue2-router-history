@@ -85,9 +85,7 @@ class routerHistory {
           }
         }
       }
-
-
-
+      this.isGo_num = 0;
     })
 
   }

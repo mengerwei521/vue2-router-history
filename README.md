@@ -1,3 +1,7 @@
+# 更新说明
+
+1.1.0 更新，在每次 afterEach 后 isGo_num 清零
+
 # 安装
 
 npm i vue2-router-history
@@ -57,4 +61,3 @@ this.$routerHistory.reLaunchRoute(route_name：路由名,query:路由参数)
 1，在微信开发者工具打开的网页，可能会导致插件 go(-x)的 X 计算出错，因为插件采用 sessionStorage 缓存 push 的路由，在工具除非清除缓存，否则多次复制相同网址加载会导致 push 记录过多。[目前再真机没有发现该问题]
 
 2，对于特殊跳转问题: A > B > C > D > B > F > E [>代表 push 跳转]， 在 B 页面调用 setBackRoute API 在 E 页面调用 JumpBackRoute API，则返回第一个 B 页面，
-
