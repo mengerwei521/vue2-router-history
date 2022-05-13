@@ -143,7 +143,9 @@ class routerHistory {
   reLaunchRoute(value, query) {
     Loading(); //蒙层
     let D_value = this._historyList.length;
-    this.router.go(-`${D_value}`)
+    if (D_value) {
+      this.router.go(-`${D_value}`)
+    }
     if (this.isConsole) {
       console.log('%c back() 或者 go(-x) 返回层级↓', 'color:yellow;background:green;')
       console.log(D_value)

@@ -1,6 +1,6 @@
 {
   "name": "vue2-router-history",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "vue@2下的路由跳转历史记录及自定义回退层级",
   "keywords":["vue2.x","vue-router3.x","push跳转历史记录处理","自定义回退层级"],
   "main": "index.js",
