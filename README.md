@@ -1,6 +1,6 @@
 # 更新说明
 
-1.1.1 更新，在每次 afterEach 后 isGo_num 清零
+2.0.0 更新，在每次 afterEach 后 isGo_num 清零
 
 # 安装
 
@@ -65,3 +65,8 @@ this.$routerHistory.reLaunchRoute(route_name：路由名,query:路由参数)
 ## 更新
 
 ### 解决 1.1.0 调用 this.$routerHistory.reLaunchRoute('A') go(0) 问题
+
+### 解决 1.1.1 移动端物理回退，乱跳的问题
+
+手机物理回退发现的问题【安卓 or 苹果】
+使用物理回退， this.isGo_num 变量会莫名变化【比如默认是 0，使用物理回退变成-2】目前不知道原因
