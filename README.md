@@ -1,6 +1,6 @@
 # 更新说明
 
-2.0.0 更新，在每次 afterEach 后 isGo_num 清零
+2.0.1 更新，在每次 afterEach 后 isGo_num 清零
 
 # 安装
 
