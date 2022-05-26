@@ -12,7 +12,7 @@ import routerHistory from 'vue2-router-history'
 
 // router 指是是 vue-router isConsole：是否打开 console 调试
 
-Vue.use(routerHistory, { router: router, isCosole: true });
+Vue.use(routerHistory, { router: router, isConsole: true });
 
 # 插件说明
 
@@ -62,11 +62,13 @@ this.$routerHistory.reLaunchRoute(route_name：路由名,query:路由参数)
 
 2，对于特殊跳转问题: A > B > C > D > B > F > E [>代表 push 跳转]， 在 B 页面调用 setBackRoute API 在 E 页面调用 JumpBackRoute API，则返回第一个 B 页面，
 
+3,对于 go(n) n>=0 不做处理
+
 ## 更新
 
-### 解决 1.1.0 调用 this.$routerHistory.reLaunchRoute('A') go(0) 问题
+### 已解决 1.1.0 调用 this.$routerHistory.reLaunchRoute('A') go(0) 问题
 
-### 解决 1.1.1 移动端物理回退，乱跳的问题
+### 已解决 1.1.1 移动端物理回退，乱跳的问题
 
-手机物理回退发现的问题【安卓 or 苹果】
-使用物理回退， this.isGo_num 变量会莫名变化【比如默认是 0，使用物理回退变成-2】目前不知道原因
+手机物理回退发现的问题【安卓 or 苹果】方法：路由跳转或 this.isGo_num 赋值为 null
+使用物理回退， this.isGo_num 变量会莫名变化【比如默认是 null，使用物理回退变成-2】目前不知道原因
